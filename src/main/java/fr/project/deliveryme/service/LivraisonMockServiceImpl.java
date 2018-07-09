@@ -15,7 +15,7 @@ public class LivraisonMockServiceImpl implements ILivraisonService{
 	public LivraisonMockServiceImpl() {
 		livraisons = new ArrayList<Livraison>();
 		livraisons.add(new Livraison("L100","Nouira","Sarah","Courbevoie","LIDL","","Clichy"));
-		livraisons.add(new Livraison("L101'","Abbes","Hamza","Asnieres","Carrefour","","La Defense"));
+		livraisons.add(new Livraison("L101","Abbes","Hamza","Asnieres","Carrefour","","La Defense"));
 		livraisons.add(new Livraison("L100","Kandara","Marouene","Courbevoie","Intermarche","","Paris"));
 	}
 
