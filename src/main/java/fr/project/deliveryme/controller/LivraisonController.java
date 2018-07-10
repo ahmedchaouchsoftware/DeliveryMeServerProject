@@ -39,7 +39,7 @@ public class LivraisonController {
 		livraisonService.updateLivraison(livraison);
 	}
 	
-	@DeleteMapping("/{ref}")
+	@DeleteMapping("/{refLivraison}")
 	public void deleteLivraison(@PathVariable String refLivraison){
 		livraisonService.deleteLivraison(refLivraison);
 	}
