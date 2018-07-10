@@ -12,5 +12,5 @@ public interface ILivraisonService {
 	
 	void updateLivraison(Livraison livraison);
 	
-	void deleteLivraison(String refLivraison);
+	void deleteLivraison(Long idLivraison);
 }

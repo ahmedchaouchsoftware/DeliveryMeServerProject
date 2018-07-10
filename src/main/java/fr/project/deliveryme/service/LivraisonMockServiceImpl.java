@@ -17,6 +17,7 @@ public class LivraisonMockServiceImpl implements ILivraisonService{
 		livraisons.add(new Livraison("L100","Nouira","Sarah","Courbevoie","LIDL","","Clichy"));
 		livraisons.add(new Livraison("L101","Abbes","Hamza","Asnieres","Carrefour","","La Defense"));
 		livraisons.add(new Livraison("L100","Kandara","Marouene","Courbevoie","Intermarche","","Paris"));
+		livraisons.add(new Livraison("L200","Miledi","Mariem","Paris","Monoprix","","Paris"));
 	}
 
 	@Override
@@ -38,9 +39,9 @@ public class LivraisonMockServiceImpl implements ILivraisonService{
 	}
 
 	@Override
-	public void deleteLivraison(String refLivraison) {
+	public void deleteLivraison(Long refLivraison) {
 		Livraison livraison = new Livraison();
-		livraison.setRef(refLivraison);
+		livraison.setIdLivraison(refLivraison);
 		livraisons.remove(livraison);
 		
 	}

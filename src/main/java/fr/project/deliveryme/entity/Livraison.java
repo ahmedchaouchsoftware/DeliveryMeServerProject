@@ -1,7 +1,17 @@
 package fr.project.deliveryme.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Livraison {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long idLivraison;
+	
 	private String ref;
 	
 	private String expediteur_nom;
@@ -88,12 +98,20 @@ public class Livraison {
 	public void setDestinataire_adresse(String destinataire_adresse) {
 		this.destinataire_adresse = destinataire_adresse;
 	}
+	
+	public Long getIdLivraison() {
+		return idLivraison;
+	}
+
+	public void setIdLivraison(Long idLivraison) {
+		this.idLivraison = idLivraison;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((ref == null) ? 0 : ref.hashCode());
+		result = prime * result + ((idLivraison == null) ? 0 : idLivraison.hashCode());
 		return result;
 	}
 
@@ -106,10 +124,10 @@ public class Livraison {
 		if (getClass() != obj.getClass())
 			return false;
 		Livraison other = (Livraison) obj;
-		if (ref == null) {
-			if (other.ref != null)
+		if (idLivraison == null) {
+			if (other.idLivraison != null)
 				return false;
-		} else if (!ref.equals(other.ref))
+		} else if (!idLivraison.equals(other.idLivraison))
 			return false;
 		return true;
 	}
