@@ -1,4 +1,4 @@
-package fr.project.deliveryme.service;
+package fr.project.deliveryme.service.impl;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import fr.project.deliveryme.entity.Livraison;
 import fr.project.deliveryme.repository.LivraisonRepository;
+import fr.project.deliveryme.service.ILivraisonService;
 
 @Service
 @Primary
